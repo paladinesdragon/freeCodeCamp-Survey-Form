@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>freeCodeCamp Survey</title>
+</head>
+<body>
+    <section class="container">
+        <header>
+            <h1 id="title">Free Code Camp Form Project</h1>
+            <p id="description">A survey about your experience using Free Code Camp. Required fields are followed by <abbr title="required">*</abbr>.</p>
+        </header>
+        <main class="wrapper">
+            <form id="survey-form">
+                <p>
+                    <label for="name" id="name-label">
+                        <strong><abbr title="required">*</abbr></strong>Name
+                    </label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required />
+                </p>
+                <p>
+                    <label for="email" id="email-label">
+                        <strong><abbr title="required">*</abbr></strong>Email
+                    </label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required />
+                </p>
+                <p>
+                    <label for="number" id="number-label">Rate your experience using freecodecamp.org from 1 to 5.</label>
+                    <input type="number" id="number" name="number" min="1" max="5" placeholder="5 being the best" />
+                </p>
+                <p>
+                    <label for="dropdown">How often do you use freecodecamp.org?</label>
+                    <select id="dropdown" name="often">
+                        <option value="daily">Daily</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="bi">Bi-Weekly</option>
+                        <option value="monthly">Monthly</option>
+                    </select>
+                </p>
+                <fieldset>
+                    <legend>What are you hoping to do with what you've learned?</legend>
+                    <section class="fieldset-grid">
+                         <p>
+                            <input type="radio" id="int_1" name="interest" value="full" />
+                            <label for="int_1">Full Stack Development</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="int_2" name="interest" value="front" />
+                            <label for="int_2">Front End Development</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="int_3" name="interest" value="back" />
+                            <label for="int_3">Back End Development</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="int_4" name="interest" value="ops" />
+                            <label for="int_4">Dev Ops</label>
+                        </p>
+                    </section>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Which languages do you like? (check all that apply)</legend>
+                    <section class="fieldset-grid full">
+                        <p>
+                            <input type="checkbox" id="like_1" name="like" value="html" />
+                            <label for="like_1">HTML5</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="like_2" name="like" value="css" />
+                            <label for="like_2">CSS3</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="like_3" name="like" value="js" />
+                            <label for="like_3">JavaScript</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="like_4" name="like" value="es" />
+                            <label for="like_4">ES6</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="like_5" name="like" value="react" />
+                            <label for="like_5">React</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="like_6" name="like" value="ang" />
+                            <label for="like_6">Angular</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="like_7" name="like" value="vue" />
+                            <label for="like_7">Vue.js</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="like_8" name="like" value="node" />
+                            <label for="like_8">Node.js</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="like_9" name="like" value="php" />
+                            <label for="like_9">PHP</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="like_10" name="like" value="py" />
+                            <label for="like_10">Python</label>
+                        </p>
+                    </section>
+                </fieldset>
+                <p class="full">
+                    <label for="comments">Additional Comments</label>
+                    <textarea id="comments" name="comments" rows="6"></textarea>
+                </p>
+                <p class="full">
+                    <button type="submit" id="submit" class="full-width">SUBMIT</button>
+                </p>
+            </form>
+        </main>
+        <footer>
+            <a href="freecodecamp.org">freeCodeCamp.org</a>
+        </footer>
+    </section>
+</body>
+</html>

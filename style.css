@@ -1,0 +1,86 @@
+* {
+    box-sizing:border-box;
+}
+
+body{
+    padding:1em;
+}
+
+p {
+    margin:0;
+}
+
+.container {
+    max-width:1200px;
+    margin:auto;
+    box-shadow:0 0 10px 0 #36454f;
+    font-size:18px;
+}
+
+.container > * {
+    padding:1em;
+}
+
+.container abbr {
+    color:red;
+    text-decoration:none;
+}
+
+.container > header, footer {
+    background:#006400;
+    color:white;
+    text-align:center;
+}
+
+#survey-form {
+    display:grid;
+    grid-template-columns:1fr;
+    grid-gap:1em;
+}
+
+@media(min-width:700px) {
+    #survey-form {
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-gap:1em;
+    }
+    #survey-form .full {
+        grid-column:1/3;
+    }
+}
+
+#survey-form label{
+    display:block;
+}
+
+#survey-form input, select, button{
+    width:100%;
+    border:1px solid #006400;
+    border-radius:.5em;
+    font-size:14px;
+    padding:0.7em;
+}
+
+#survey-form fieldset, textarea {
+    width:100%;
+    border:1px solid #006400;
+}
+
+#survey-form [type=checkbox],
+#survey-form [type=radio],
+#survey-form [type=checkbox] + label,
+#survey-form [type=radio] + label {
+    display:inline;
+    width:5%;
+}
+
+#submit {
+    background: rgba(144,238,144,.50);
+    font-size:18px;
+    cursor: pointer;
+}
+
+.container footer a{
+    text-decoration:none;
+    color:White;
+}
